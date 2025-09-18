@@ -1,0 +1,90 @@
+/* Reset and fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* Animated Gradient Background */
+.background {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gradient animation */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Card Styling with Glassmorphism */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px 25px;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+/* Input & Button Styling */
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 15px 0;
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ffffff;
+  color: #23a6d5;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Result Display */
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
